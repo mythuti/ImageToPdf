@@ -64,7 +64,7 @@ class App extends Component {
         for (var i = 0; i <
             uploads.length; i++) {
             Tesseract
-                .recognize(uploads[i], { lang: 'eng' })
+                .recognize(uploads[i], { lang: "eng" })
                 .catch(err => { console.error(err) })
                 .then(result => {
                     // Get Confidence score 
@@ -153,14 +153,14 @@ class App extends Component {
                         <
                         small > < strong > Full Output: < /strong> {value.text}</small >
                         <
-                        /div> <
-                        /div> <
+                        /div> < /
+                        div > <
                         /div>
                     )
                 })
             } <
-            /section> <
-            /div>
+            /section> < /
+            div >
         )
     }
 }
